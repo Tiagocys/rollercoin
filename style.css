@@ -1,0 +1,241 @@
+@font-face {
+    font-family: pixelroller;
+    src: url(pixelroller.ttf);
+}
+
+p {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: pixelroller;
+    font-size: 18px;
+    color: #03e1e4;
+}
+
+h2 {
+    font-family: pixelroller;
+    font-size: 14px;
+    color: #03e1e4;
+}
+
+h3 {
+    font-family: pixelroller;
+    font-size: 12px;
+    color: #03e1e4;
+}
+
+h4 {
+    font-family: pixelroller;
+    font-size: 10px;
+    color: #03e1e4;
+}
+
+button {
+    display: block;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: pixelroller;
+    font-size: 8px;
+    background-color: #03e1e4;
+    color: #2f3045;
+}
+
+button:hover {
+    background-color: white;
+}
+
+body {
+    background-color: #2f3045;
+    color: white;
+    position: relative;
+}
+
+.menu {
+    height: 70px;
+}
+
+.logo {
+    height: 60px;
+    position: absolute;
+    margin: 5px 0 5px 10px;
+    top: 0;
+    left: 0;
+}
+
+.hamburguer {
+    height: 50px;
+    position: absolute;
+    margin: 10px 10px 10px 0;
+    top: 0;
+    right: 0;
+
+}
+
+ /*----------seção de artigos com 2 containers---------*/
+/*----------------------------------------------------*/
+
+.artigo1, .artigo2, .artigo3, .artigo4 {
+    display: flex;
+    padding-left: 10%;
+    padding-top: 100px;
+    padding-right: 10%;
+}
+
+.seção1, .seção3, .seção5, .seção7 {
+    margin-right: 10%;
+}
+
+.seção4 {
+    min-width: 580px;
+}
+
+ /*----------seção de artigos com 4 containers---------*/
+/*----------------------------------------------------*/
+
+.tituloSolto {
+    padding-top: 100px;
+    padding-left: 10%;
+}
+
+.artigosComQuebra1, .artigosComQuebra2{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+}
+
+.seçãoComQuebra1, .seçãoComQuebra2, .seçãoComQuebra3, .seçãoComQuebra4 {
+    display: flex;
+}
+
+.caixa2 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.caixa4, .caixa7 {
+    margin-left: 5%;
+}
+
+.caixa5 {
+    margin-right: 5%;
+}
+
+.caixa2, .caixa4, .caixa5, .caixa7 {
+    width: 350px;
+}
+
+ /*----------seção de artigos com 4 containers---------*/
+/*----------------------------------------------------*/
+
+.chamada {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.chamada button {
+    margin: 30px auto 0;
+    background-color: yellow;
+}
+
+.chamada button:hover {
+    background-color: white;
+}
+
+footer {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.imagensRodapé img {
+    width: 40px;
+    padding-top: 10px;
+}
+
+/*-------------------------------1200px-----------------------------------*/
+
+@media (max-width: 1200px) {
+    .artigo1, .artigo2, .artigo3, .artigo4 {
+        flex-direction: column;
+    }
+
+    .seção1 {
+        order: 1;
+    }
+
+    .seção5 {
+        order: 3;
+    }
+
+    .seção6 {
+        order: 2;
+    }
+
+    .seção7 {
+        order: 5;
+    }
+
+    .seção8 {
+        order: 4;
+    }
+    
+    .seção2, .seção3, .seção6, .seção8 {
+        margin: auto;
+    }
+
+    .artigosComQuebra1, .artigosComQuebra2 {
+        flex-direction: column;
+    }
+
+    .seçãoComQuebra1, .seçãoComQuebra2, .seçãoComQuebra3, .seçãoComQuebra4 {
+        margin: auto;
+    }
+
+    .caixa7 {
+        margin: 0;
+    }
+    
+    
+}
+
+@media (max-width: 680px) {
+    .seção2, .seção3, .seção6, .seção8 {
+        max-width: 500px;
+    }
+    .seção2 img, .seção3 img, .seção6 img, .seção8 img{
+        max-width: 100%;
+    }
+
+    .seção4 {
+        min-width: auto;
+
+    }
+
+    .caixa1, .caixa3, .caixa6, .caixa8 {
+        max-width: 300px;
+    }
+
+    .caixa1 img, .caixa3 img, .caixa6 img, .caixa8 img {
+        max-width: 100%;
+    }
+
+    .artigo1, .artigo2, .artigo3, .artigo4, .tituloSolto, .chamada {
+        padding-top: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .seção2, .seção3, .seção6, .seção8 {
+        max-width: 300px;
+    }
+}
