@@ -1,6 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 @font-face {
     font-family: pixelroller;
     src: url(pixelroller.ttf);
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
@@ -53,8 +62,13 @@ body {
     position: relative;
 }
 
+header {
+
+}
+
 .menu {
     height: 70px;
+    background-color: #7e7da1;
 }
 
 .logo {
@@ -82,10 +96,21 @@ body {
     padding-left: 10%;
     padding-top: 100px;
     padding-right: 10%;
+    background: rgb(47,48,69);
+    background: linear-gradient(180deg, rgba(47,48,69,1) 6%, rgba(33,37,41,1) 49%, rgba(47,48,69,1) 93%);
 }
 
 .seção1, .seção3, .seção5, .seção7 {
     margin-right: 10%;
+}
+
+.seção1 p, .seção5 p, .seção7 p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.seção4 p {
+    padding-top: 10px;
 }
 
 .seção4 {
@@ -101,9 +126,12 @@ body {
 }
 
 .artigosComQuebra1, .artigosComQuebra2{
+    padding-top: 30px;
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
+    background: rgb(47,48,69);
+    background: linear-gradient(180deg, rgba(47,48,69,1) 6%, rgba(33,37,41,1) 49%, rgba(47,48,69,1) 93%);
 }
 
 .seçãoComQuebra1, .seçãoComQuebra2, .seçãoComQuebra3, .seçãoComQuebra4 {
@@ -147,6 +175,7 @@ body {
 footer {
     padding-top: 100px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .imagensRodapé img {
@@ -238,4 +267,60 @@ footer {
     .seção2, .seção3, .seção6, .seção8 {
         max-width: 300px;
     }
+}
+
+.x {
+    height: 50px;
+    position: absolute;
+    margin: 10px 10px 10px 0;
+    top: 0;
+    right: 0;
+}
+
+.menuHidden {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #2f3045;
+    border-left: solid 2px white;
+    border-bottom: solid 2px white;
+    display: none;    
+}
+
+
+.caixaDoMenu {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+#jogos, #login, #cadastro {
+    display: flex;
+    padding: 10px 0 0 5px;
+    height: 30px;
+    border-bottom: 1px solid;
+    
+}
+#jogos {
+    border-top: solid 1px;
+}
+
+
+#jogos img, #login img, #cadastro img {
+    width: 30px;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+#jogos p, #login p, #cadastro p {
+    font-family: pixelroller;
+    font-size: 12px;
+    color: white;
+}
+
+#jogos p:hover, #login p:hover, #cadastro p:hover{
+    color: #03e1e4;
 }
