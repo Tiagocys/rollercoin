@@ -57,18 +57,14 @@ button:hover {
 }
 
 body {
-    background-color: #2f3045;
     color: white;
     position: relative;
-}
-
-header {
-
+    background-color: #181928;
 }
 
 .menu {
     height: 70px;
-    background-color: #7e7da1;
+    background-color: #2f3045;
 }
 
 .logo {
@@ -96,8 +92,7 @@ header {
     padding-left: 10%;
     padding-top: 100px;
     padding-right: 10%;
-    background: rgb(47,48,69);
-    background: linear-gradient(180deg, rgba(47,48,69,1) 6%, rgba(33,37,41,1) 49%, rgba(47,48,69,1) 93%);
+    background-color: #181928;
 }
 
 .seção1, .seção3, .seção5, .seção7 {
@@ -117,21 +112,26 @@ header {
     min-width: 580px;
 }
 
+.artigo3 {
+    padding-bottom: 50px;
+}
+
  /*----------seção de artigos com 4 containers---------*/
 /*----------------------------------------------------*/
 
 .tituloSolto {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 10%;
+    background-color: #2f3045;
 }
 
 .artigosComQuebra1, .artigosComQuebra2{
     padding-top: 30px;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 50px;
     display: flex;
-    background: rgb(47,48,69);
-    background: linear-gradient(180deg, rgba(47,48,69,1) 6%, rgba(33,37,41,1) 49%, rgba(47,48,69,1) 93%);
+    background-color: #2f3045;
 }
 
 .seçãoComQuebra1, .seçãoComQuebra2, .seçãoComQuebra3, .seçãoComQuebra4 {
@@ -226,6 +226,12 @@ footer {
         margin: 0;
     }
     
+    .artigosComQuebra1, .artigosComQuebra2 {
+        padding: 10px;
+    }
+    .seçãoComQuebra1, .seçãoComQuebra2, .seçãoComQuebra3, .seçãoComQuebra4 {
+        padding: 10px;
+    }
     
 }
 
@@ -260,6 +266,13 @@ footer {
 
     h1, h2 {
         text-align: center;
+    }
+
+    .artigosComQuebra1, .artigosComQuebra2 {
+        padding: 10px;
+    }
+    .seçãoComQuebra1, .seçãoComQuebra2, .seçãoComQuebra3, .seçãoComQuebra4 {
+        padding: 10px;
     }
 }
 
